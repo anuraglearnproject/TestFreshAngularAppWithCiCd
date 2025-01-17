@@ -24,12 +24,12 @@ steps:
 
 - task: PublishBuildArtifacts@1
   inputs:
-    PathtoPublish: 'fresh-angular-app/dist'
-    ArtifactName: 'fresh-angular-app/dist'
+    PathtoPublish: 'FreshAngularApp/dist'
+    ArtifactName: 'FreshAngularApp/dist'
 
 - task: ArchiveFiles@2
   inputs:
-    rootFolderOrFile: '$(System.DefaultWorkingDirectory)/fresh-angular-app/'
+    rootFolderOrFile: '$(System.DefaultWorkingDirectory)/FreshAngularApp/'
     includeRootFolder: false
     archiveType: 'zip'
     archiveFile: '$(Build.ArtifactStageingDirectory)/$(Build.BuildId).zip'
