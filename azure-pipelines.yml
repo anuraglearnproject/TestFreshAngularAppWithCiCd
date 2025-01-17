@@ -24,7 +24,7 @@ steps:
 
 - task: PublishBuildArtifacts@1
   inputs:
-    PathtoPublish: '$(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip'
+    PathtoPublish: 'FreshAngularApp/$(Build.BuildId).zip'
     ArtifactName: 'PublishBuildArtifact'
     publishLocation: 'Container'
 
@@ -33,5 +33,5 @@ steps:
     rootFolderOrFile: '$(System.DefaultWorkingDirectory)'
     includeRootFolder: false
     archiveType: 'zip'
-    archiveFile: '$(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip'
+    archiveFile: 'FreshAngularApp/$(Build.BuildId).zip'
     replaceExistingArchive: true
