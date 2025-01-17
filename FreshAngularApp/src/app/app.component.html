@@ -1,1 +1,6 @@
 <h1>This is a fresh Angular app.</h1>
+<input type="checkbox" [(ngModel)]="showTestComponent" id="showTestComponent"/>
+<label for="showTestComponent">Show the test component now</label>
+<div *ngIf="showTestComponent">
+  <app-testcomponent></app-testcomponent>
+</div>
